@@ -1,7 +1,7 @@
 .MODEL SMALL
 .STACK 100H
 .DATA
-    frist_char db 'I'
+    first_char db 'I'
     last_char db 'A'
 
 .CODE
@@ -13,7 +13,7 @@ MAIN PROC
 
     ;print first character
     MOV AH, 2       ; DOS function to display character
-    MOV DL, frist_char     ; Load first character
+    MOV DL, first_char     ; Load first character
     INT 21H         ; Call DOS interrupt
 
     ;print new line
@@ -28,7 +28,7 @@ MAIN PROC
     MOV DL, last_char     ; Load last character
     INT 21H         ; Call DOS interrupt
 
-    
+
     ; Exit program
     MOV AH, 4CH     ; DOS function to exit
     INT 21H         ; Call DOS interrupt
