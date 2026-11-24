@@ -13,13 +13,13 @@ MAIN PROC
     LEA DX, msg1
     INT 21h
 
-    ; Print !
-    MOV DL, 61h         ; ! character
+    ; Print !    
     MOV AH, 2
+    MOV DL, 61h ; ! character
     INT 21h   
-
-    MOV DL, 62h         ; 'b' character (ASCII 98)
+ 
     MOV AH, 2
+    MOV DL, 62h  ; 'b' character (ASCII 98) 
     INT 21h
 
   
