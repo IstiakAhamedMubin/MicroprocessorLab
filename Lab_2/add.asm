@@ -21,8 +21,8 @@
         INT 21H
 
         MOV DL,sum
-        ADD DL,30H
-        MOV AH , 2
+        ADD DL,30H ;ASCII convertion
+        MOV AH , 2 
         INT 21H 
 
         MOV AH,4Ch
