@@ -25,7 +25,7 @@ MAIN PROC
     LEA DX, msg2
     INT 21H
     
-    MOV AH, 2
+  
     MOV DL,BL
     INT 21H
 
